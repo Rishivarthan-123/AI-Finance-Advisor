@@ -56,3 +56,8 @@ Jinja2==3.1.6
 MarkupSafe==3.0.3
 typing_extensions==4.16.0
 greenlet==3.5.3
+
+# ========================================
+# Production Server (for Render.com)
+# ========================================
+gunicorn==23.0.0
