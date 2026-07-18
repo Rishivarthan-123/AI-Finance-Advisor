@@ -1,4 +1,4 @@
-# Environment Secrets
+# Environment Secrets - NEVER commit these
 .env
 backend/.env
 frontend/.env
@@ -13,6 +13,10 @@ backend/venv/
 backend/.venv/
 __pycache__/
 *.pyc
+*.pyo
+
+# Large ML model files (too big for GitHub/Render free tier)
+backend/ml/saved_models/financial_health_model.pkl
 
 # Node dependencies
 frontend/node_modules/
@@ -23,3 +27,5 @@ frontend/.vite/
 *.zip
 .DS_Store
 Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
