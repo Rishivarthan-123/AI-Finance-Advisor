@@ -49,7 +49,12 @@ db.init_app(app)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
 
-CORS(app)
+CORS(app, origins=[
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://ai-finance-advisor-ten.vercel.app",
+    "https://*.vercel.app"
+], supports_credentials=True)
 
 # ==========================
 # Register Blueprints
