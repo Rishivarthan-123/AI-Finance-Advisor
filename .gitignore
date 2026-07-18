@@ -1,0 +1,25 @@
+# Environment Secrets
+.env
+backend/.env
+frontend/.env
+
+# Databases
+backend/instance/
+*.db
+*.sqlite
+
+# Python dependencies
+backend/venv/
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# System and Archives
+*.zip
+.DS_Store
+Thumbs.db
